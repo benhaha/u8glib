@@ -74,6 +74,13 @@ extern "C" {
 /*===============================================================*/
 /* flash memory access */
 
+#if defined(__MSPGCC__)
+/* mspgcc does not have .progmem sections.  Use -fdata-sections. */
+#define U8G_FONT_SECTION(name)
+#else
+#define U8G_FONT_SECTION(name) U8G_SECTION(".progmem." name)
+#endif
+
 #if defined(__AVR__)
 /* U8G_PROGMEM is used by the XBM example */
 #define U8G_PROGMEM U8G_SECTION(".progmem.data")
