@@ -10,7 +10,7 @@
   Max Font    ascent = 7 descent=-1
 */
 #include "u8g.h"
-const u8g_fntpgm_uint8_t u8g_font_lucasfont_alternaten[206] U8G_SECTION(".progmem.u8g_font_lucasfont_alternaten") = {
+const u8g_fntpgm_uint8_t u8g_font_lucasfont_alternaten[206] U8G_FONT_SECTION("u8g_font_lucasfont_alternaten") = {
   0,9,11,0,255,7,0,0,0,0,42,57,0,7,255,7,
   0,7,5,5,8,0,1,68,40,254,40,68,5,5,5,6,
   0,1,32,32,248,32,32,2,3,3,3,0,255,64,64,128,

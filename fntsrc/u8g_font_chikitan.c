@@ -10,7 +10,7 @@
   Max Font    ascent = 5 descent=-1
 */
 #include "u8g.h"
-const u8g_fntpgm_uint8_t u8g_font_chikitan[180] U8G_SECTION(".progmem.u8g_font_chikitan") = {
+const u8g_fntpgm_uint8_t u8g_font_chikitan[180] U8G_FONT_SECTION("u8g_font_chikitan") = {
   0,9,10,0,254,5,0,0,0,0,42,57,0,5,255,5,
   0,3,3,3,5,1,1,160,64,160,5,5,5,6,0,0,
   32,32,248,32,32,2,2,2,3,0,255,64,128,5,1,1,

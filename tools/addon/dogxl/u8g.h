@@ -65,7 +65,7 @@ extern "C" {
 /* flash memory access */
 
 #if defined(__AVR__)
-#define U8G_PROGMEM U8G_SECTION(".progmem.data")
+#define U8G_PROGMEM U8G_FONT_SECTION("data")
 typedef uint8_t PROGMEM u8g_pgm_uint8_t;
 typedef uint8_t u8g_fntpgm_uint8_t;
 #define u8g_pgm_read(adr) pgm_read_byte_near(adr)
@@ -782,10 +782,10 @@ void chess_Step(uint8_t keycode);
 
 /*===============================================================*/
 /* font definitions */
-extern const u8g_fntpgm_uint8_t u8g_big_font[]U8G_SECTION(".progmem.u8g_big_font");
-extern const u8g_fntpgm_uint8_t u8g_mid_font[]U8G_SECTION(".progmem.u8g_mid_font");
-extern const u8g_fntpgm_uint8_t u8g_midbig_font[]U8G_SECTION(".progmem.u8g_midbig_font");
-extern const u8g_fntpgm_uint8_t u8g_small_font[]U8G_SECTION(".progmem.u8g_small_font");
+extern const u8g_fntpgm_uint8_t u8g_big_font[]U8G_FONT_SECTION("u8g_big_font");
+extern const u8g_fntpgm_uint8_t u8g_mid_font[]U8G_FONT_SECTION("u8g_mid_font");
+extern const u8g_fntpgm_uint8_t u8g_midbig_font[]U8G_FONT_SECTION("u8g_midbig_font");
+extern const u8g_fntpgm_uint8_t u8g_small_font[]U8G_FONT_SECTION("u8g_small_font");
 
 
 #ifdef __cplusplus

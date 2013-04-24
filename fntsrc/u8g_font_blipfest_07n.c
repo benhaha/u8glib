@@ -10,7 +10,7 @@
   Max Font    ascent = 5 descent= 0
 */
 #include "u8g.h"
-const u8g_fntpgm_uint8_t u8g_font_blipfest_07n[160] U8G_SECTION(".progmem.u8g_font_blipfest_07n") = {
+const u8g_fntpgm_uint8_t u8g_font_blipfest_07n[160] U8G_FONT_SECTION("u8g_font_blipfest_07n") = {
   0,5,6,0,255,5,0,0,0,0,42,57,0,5,0,5,
   0,255,3,3,3,4,0,1,64,224,64,1,2,2,2,0,
   0,128,128,3,1,1,4,0,2,224,1,1,1,2,0,0,

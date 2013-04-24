@@ -10,7 +10,7 @@
   Max Font    ascent =25 descent=-5
 */
 #include "u8g.h"
-const u8g_fntpgm_uint8_t u8g_font_gdr20n[619] U8G_SECTION(".progmem.u8g_font_gdr20n") = {
+const u8g_fntpgm_uint8_t u8g_font_gdr20n[619] U8G_FONT_SECTION("u8g_font_gdr20n") = {
   0,47,44,240,246,19,0,0,0,0,42,57,0,25,251,19,
   0,12,13,26,14,1,11,6,0,6,0,134,0,102,48,242,
   240,27,128,6,0,27,128,114,240,230,48,6,32,6,0,6,
